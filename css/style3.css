@@ -1,0 +1,102 @@
+/* Définir les couleurs de base */
+:root {
+    --blanc: #ffffff;
+    --vert-club: #4CAF50; /* Une couleur verte typique, ajustez si nécessaire */
+    --vert-clair: #80e27e;
+    --gris-clair: #f4f4f4;
+}
+
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--blanc);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--vert-club);
+    color: var(--blanc);
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column; /* Aligner le logo et le titre verticalement */
+}
+
+header .logo img {
+    max-width: 150px; /* Augmenter la taille du logo */
+    height: auto;
+    margin-bottom: 15px; /* Ajouter un peu d'espace entre le logo et le titre */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--blanc);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section About */
+.about {
+    padding: 30px;
+    background-color: var(--gris-clair);
+    border-top: 4px solid var(--vert-club);
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.about h2, .about h3 {
+    color: var(--vert-club);
+}
+
+.about ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about ul li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--vert-club);
+    color: var(--blanc);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social-media a {
+    color: var(--blanc);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
