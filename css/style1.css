@@ -44,9 +44,8 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Section Hero (Image en fond) */
-.hero {
-    background-image: url('football-hero.jpg');
+/* Section text */
+.text {
     background-size: cover;
     background-position: center;
     color: white;
@@ -54,13 +53,33 @@ nav ul li a {
     padding: 80px 20px;
 }
 
-.hero h2 {
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Couvre toute la section sans déformer la vidéo */
+    z-index: -1; /* Place la vidéo en arrière-plan */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrer le texte */
+    color: white;
+    text-align: center;
+    z-index: 1; /* Place le contenu devant la vidéo */
+}
+
+.text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-family: "Protest Revolution", sans-serif;
 }
 
-.hero p {
+.text p {
     font-size: 1.25rem;
     margin-top: 20px;
 }

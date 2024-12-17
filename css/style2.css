@@ -112,11 +112,17 @@ nav ul li a {
     color: #555;
 }
 
-.competition img, .league img {
-    max-width: 100%;
-    height: auto;
+.competition img, .league img, .club img {
+    width: 150px; /* Redimensionne toutes les images à 150px de large */
+    height: auto; /* Laisse la hauteur s'ajuster automatiquement */
     border-radius: 8px;
     margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol des images */
+.competition img:hover, .league img:hover, .club img:hover {
+    transform: scale(1.1);
 }
 
 /* Section Footer */
@@ -135,19 +141,6 @@ footer .social-media a {
 
 footer .social-media a:hover {
     text-decoration: underline;
-}
-
-/* Mise en forme des images dans les sections */
-.competition img, .league img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-/* Effet au survol des images */
-.competition img:hover, .league img:hover {
-    transform: scale(1.1);
 }
 
 /* Responsive : Adaptation pour les petits écrans */
