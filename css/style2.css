@@ -5,32 +5,31 @@
     box-sizing: border-box;
 }
 
-/* Fond général */
+/* Fond général de la page */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f2f2f2; /* Fond gris clair */
-    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* En-tête */
+/* Header */
 header {
-    background-color: #ff6666; /* Fond rouge sur le bandeau */
+    background-color: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
 header .logo h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    font-family: "Bungee Spice", sans-serif; /* Utilisation de la police "Bungee Spice" pour le titre */
+    font-size: 2em;
 }
 
+/* Navigation */
 nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
     text-align: center;
-    margin-top: 10px;
 }
 
 nav ul li {
@@ -41,116 +40,140 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
-/* Section Hero (Image en fond) */
-.hero {
-    background-image: url('football-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: "Protest Revolution", sans-serif;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    margin-top: 20px;
-}
-
-/* Section des compétitions : Ligue des Champions, Europa League, etc. */
-.competitions, .international-football, .top-european-leagues {
-    background-color: #f0f8ff; /* Fond bleu clair pour contraster */
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.competitions h2, .international-football h2, .top-european-leagues h2 {
-    font-family: "Protest Revolution", sans-serif; /* Police pour les titres */
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.competitions-details, .international-football-details, .leagues-details {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px; /* Ajoute de l'espace entre les articles */
-}
-
-/* Style des articles de compétitions */
-.competition, .league {
-    width: 30%;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.competition:hover, .league:hover {
-    transform: scale(1.05); /* Légère animation de survol */
-}
-
-.competition h3, .league h3 {
-    font-size: 1.75rem;
-    margin-bottom: 10px;
-    font-family: "Bungee Spice", sans-serif; /* Police spéciale pour les titres */
-}
-
-.competition p, .league p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.competition img, .league img, .club img {
-    width: 150px; /* Redimensionne toutes les images à 150px de large */
-    height: auto; /* Laisse la hauteur s'ajuster automatiquement */
-    border-radius: 8px;
-    margin-top: 15px;
-    transition: transform 0.3s ease;
-}
-
-/* Effet au survol des images */
-.competition img:hover, .league img:hover, .club img:hover {
-    transform: scale(1.1);
-}
-
-/* Section Footer */
-footer {
-    background-color: #003366; /* Bleu foncé */
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer .social-media a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer .social-media a:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Responsive : Adaptation pour les petits écrans */
+/* Section de contenu principal */
+.football-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.football-content h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.football-content p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des clubs */
+.clubs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Chaque club */
+.club {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.club img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    margin: 20px 0;
+}
+
+/* Section des joueurs */
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+/* Chaque joueur */
+.player {
+    width: 120px;
+    text-align: center;
+}
+
+.player img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #333;
+}
+
+.player p {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Description des joueurs */
+.player p + p {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Responsivité pour les petits écrans */
 @media (max-width: 768px) {
-    .competitions-details, .international-football-details, .leagues-details {
-        flex-direction: column;
-        align-items: center;
+    .club {
+        width: 48%;
     }
 
-    .competition, .league {
-        width: 80%;
+    .player {
+        width: 90px;
+    }
+
+    .player img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .club {
+        width: 100%;
+    }
+    
+    .player {
+        width: 80px;
+    }
+
+    .player img {
+        width: 70px;
+        height: 70px;
     }
 }

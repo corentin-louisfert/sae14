@@ -9,22 +9,23 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #e6f2ff; /* Fond bleu clair */
+    background-color: #e6f2ff;
     color: #333;
 }
 
 /* En-tête */
 header {
-    background-color: #003366; /* Bleu foncé */
+    background-color: #003366;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
+
 header .logo h1 {
     font-size: 2rem;
     margin-bottom: 10px;
-    font-family: "Bungee Spice", sans-serif; /* Utilisation de la police "Bungee Spice" pour le titre */
+    font-family: "Bungee Spice", sans-serif;
 }
 
 nav ul {
@@ -44,6 +45,10 @@ nav ul li a {
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Section text */
 .text {
     background-size: cover;
@@ -58,19 +63,19 @@ nav ul li a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Couvre toute la section sans déformer la vidéo */
-    z-index: -1; /* Place la vidéo en arrière-plan */
+    height: 90%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centrer le texte */
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    z-index: 1; /* Place le contenu devant la vidéo */
+    z-index: 1;
 }
 
 .text h2 {
@@ -86,13 +91,13 @@ nav ul li a {
 
 /* Section des compétitions : Ligue des Champions, Europa League, etc. */
 .competitions, .international-football, .top-european-leagues {
-    background-color: #f0f8ff; /* Fond bleu clair pour contraster */
+    background-color: #f0f8ff;
     padding: 40px 20px;
     text-align: center;
 }
 
 .competitions h2, .international-football h2, .top-european-leagues h2 {
-    font-family: "Protest Revolution", sans-serif; /* Police pour les titres */
+    font-family: "Protest Revolution", sans-serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -101,7 +106,7 @@ nav ul li a {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px; /* Ajoute de l'espace entre les articles */
+    gap: 20px;
 }
 
 /* Style des articles de compétitions */
@@ -117,13 +122,13 @@ nav ul li a {
 }
 
 .competition:hover, .league:hover {
-    transform: scale(1.05); /* Légère animation de survol */
+    transform: scale(1.05);
 }
 
 .competition h3, .league h3 {
     font-size: 1.75rem;
     margin-bottom: 10px;
-    font-family: "Bungee Spice", sans-serif; /* Police spéciale pour les titres */
+    font-family: "Bungee Spice", sans-serif;
 }
 
 .competition p, .league p {
@@ -154,7 +159,7 @@ video {
 
 /* Section Footer */
 footer {
-    background-color: #003366; /* Bleu foncé */
+    background-color: #003366;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -183,7 +188,7 @@ footer .social-media a:hover {
     transform: scale(1.1);
 }
 
-/* Responsive : Adaptation pour les petits écrans */
+/* Adaptation pour les petits écrans */
 @media (max-width: 768px) {
     .competitions-details, .international-football-details, .leagues-details {
         flex-direction: column;
